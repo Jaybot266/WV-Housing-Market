@@ -159,7 +159,7 @@ def chat_with_gemini(question):
         print(type(e).__name__)
         print(e)
 
-    return f"Error: {e}"
+        return f"Error: {e}"
     
 
 
