@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #This goes the env file and extracts the necessary information to be able to access the Ne04j database.
-URI = st.secrets("NEO4J_URI")
-DATABASE = st.secrets("NEO4J_USERNAME")
-PASSWORD = st.secrets("NEO4J_PASSWORD")
+URI = st.secrets["NEO4J_URI"]
+DATABASE = st.secrets["NEO4J_USERNAME"]
+PASSWORD = st.secrets["NEO4J_PASSWORD"]
 
 #This puts the information gathered into one variable to beable to authinticate it's access to the database.
 AUTH = (DATABASE, PASSWORD)
@@ -17,7 +17,7 @@ driver=GraphDatabase.driver(URI, auth=AUTH)
 
 #This gets the API key to be able to access Google's Gemini.
 client = genai.Client( 
-    api_key=st.secrets("GEMINI_KEY")
+    api_key=st.secrets["GEMINI_KEY"]
 )
 
 #This stores information about wich Gemini model to use for the application in a variable. This allows for an easier time calling the model during the code.
