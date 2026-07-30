@@ -1,1 +1,192 @@
+[theme]
 
+# The theme that your custom theme inherits from.
+#
+# This can be one of the following:
+# - "light": Streamlit's default light theme.
+# - "dark" : Streamlit's default dark theme.
+base = "light"
+
+# Primary accent color.
+#primaryColor = "#4F46E5"
+
+# Background color of the app.
+backgroundColor = "#F8FAFC"
+
+# Background color used for most interactive widgets.
+#secondaryBackgroundColor = "#FFFFFF"
+
+# Color used for almost all text.
+textColor = "#111827"
+
+# Color used for all links.
+#
+# This defaults to the resolved value of `blueTextColor`.
+##linkColor =
+
+# Whether or not links should be displayed with an underline.
+##linkUnderline =
+
+# Text color used for code blocks.
+#
+# This defaults to the resolved value of `greenTextColor`.
+##codeTextColor =
+
+# Background color used for code blocks.
+##codeBackgroundColor =
+
+# The font family for all text, except code blocks.
+font = "sans serif"
+
+# An array of fonts to use in your app.
+
+# [[theme.fontFaces]]
+# family = "font_name"
+# url = "app/static/font_file.woff"
+# weight = "400"
+# style = "normal"
+##fontFaces =
+
+# The root font size (in pixels) for the app.
+##baseFontSize =
+
+# The root font weight for the app.
+##baseFontWeight =
+
+# The font family to use for headings.
+##headingFont =
+
+# One or more font sizes for h1-h6 headings.
+##headingFontSizes =
+
+# One or more font weights for h1-h6 headings.
+##headingFontWeights =
+
+# The font family to use for code (monospace) in the sidebar.
+##codeFont =
+
+# The font size (in pixels or rem) for code blocks and code text.
+##codeFontSize =
+
+# The font weight for code blocks and code text.
+##codeFontWeight =
+
+# The radius used as basis for the corners of most UI elements.
+baseRadius = "0.75rem"
+
+# The radius used as basis for the corners of buttons.
+buttonRadius = "999px"
+
+# The color of the border around elements.
+borderColor = "#E5E7EB"
+
+# The color of the border around dataframes and tables.
+##dataframeBorderColor =
+
+# The background color of the dataframe's header.
+##dataframeHeaderBackgroundColor =
+
+# Whether to show a border around input widgets.
+showWidgetBorder = true
+
+# Whether to show a vertical separator between the sidebar and the main
+# content area.
+##showSidebarBorder =
+
+# An array of colors to use for categorical chart data.
+#
+# This is a list of one or more color strings which are applied in order
+# to categorical data. These colors apply to Plotly, Altair, and
+# Vega-Lite charts.
+#
+# Invalid colors are skipped, and colors repeat cyclically if there are
+# more categories than colors. If no chart categorical colors are set,
+# Streamlit uses a default set of colors.
+#
+# For light themes, the following colors are the default:
+# [
+#     "#0068c9", # blue80
+#     "#83c9ff", # blue40
+#     "#ff2b2b", # red80
+#     "#ffabab", # red40
+#     "#29b09d", # blueGreen80
+#     "#7defa1", # green40
+#     "#ff8700", # orange80
+#     "#ffd16a", # orange50
+#     "#6d3fc0", # purple80
+#     "#d5dae5", # gray40
+# ]
+# For dark themes, the following colors are the default:
+# [
+#     "#83c9ff", # blue40
+#     "#0068c9", # blue80
+#     "#ffabab", # red40
+#     "#ff2b2b", # red80
+#     "#7defa1", # green40
+#     "#29b09d", # blueGreen80
+#     "#ffd16a", # orange50
+#     "#ff8700", # orange80
+#     "#6d3fc0", # purple80
+#     "#d5dae5", # gray40
+# ]
+##chartCategoricalColors =
+
+# An array of ten colors to use for sequential or continuous chart data.
+#
+# The ten colors create a gradient color scale. These colors apply to
+# Plotly, Altair, and Vega-Lite charts.
+#
+# Invalid color strings are skipped. If there are not exactly ten
+# valid colors specified, Streamlit uses a default set of colors.
+#
+# For light themes, the following colors are the default:
+# [
+#     "#e4f5ff", #blue10
+#     "#c7ebff", #blue20
+#     "#a6dcff", #blue30
+#     "#83c9ff", #blue40
+#     "#60b4ff", #blue50
+#     "#3d9df3", #blue60
+#     "#1c83e1", #blue70
+#     "#0068c9", #blue80
+#     "#0054a3", #blue90
+#     "#004280", #blue100
+# ]
+# For dark themes, the following colors are the default:
+# [
+#     "#004280", #blue100
+#     "#0054a3", #blue90
+#     "#0068c9", #blue80
+#     "#1c83e1", #blue70
+#     "#3d9df3", #blue60
+#     "#60b4ff", #blue50
+#     "#83c9ff", #blue40
+#     "#a6dcff", #blue30
+#     "#c7ebff", #blue20
+#     "#e4f5ff", #blue10
+# ]
+##chartSequentialColors =
+
+# An array of ten colors to use for diverging chart data.
+#
+# The ten colors create a diverging color scale, typically used for data
+# with a meaningful midpoint. These colors apply to Plotly, Altair, and
+# Vega-Lite charts.
+#
+# Invalid color strings are skipped. If there are not exactly ten
+# valid colors specified, Streamlit uses a default set of colors.
+#
+# The default colors are:
+# [
+#     "#7d353b", #red100
+#     "#bd4043", #red90
+#     "#ff4b4b", #red70
+#     "#ff8c8c", #red50
+#     "#ffc7c7", #red30
+#     "#a6dcff", #blue30
+#     "#60b4ff", #blue50
+#     "#1c83e1", #blue70
+#     "#0054a3", #blue90
+#     "#004280", #blue100
+# ]
+##chartDivergingColors =
